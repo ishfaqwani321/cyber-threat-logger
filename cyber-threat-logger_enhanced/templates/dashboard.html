@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cyber Logger Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        pre { background: #f5f5f5; padding: 10px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <h1>Dashboard</h1>
+    <p>Total Logged Visits: {{ count }}</p>
+    <h3>Recent Logs:</h3>
+    <pre>{{ logs | join('') }}</pre>
+</body>
+</html>
