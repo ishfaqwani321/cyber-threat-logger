@@ -3,5 +3,6 @@ services:
     name: flask-cyber-logger
     env: python
     buildCommand: ""
-    startCommand: python app.py
+    startCommand: gunicorn app:app
+
     plan: free
